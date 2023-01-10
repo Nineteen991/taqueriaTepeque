@@ -101,7 +101,16 @@ export default function Navbar() {
           }
         </NavLinksLi>
 
-        <NavLinksLi><Link to='/#contact'>Contact</Link></NavLinksLi>
+        <NavLinksLi>
+          <ScrollLink
+            to='contact'
+            spy={ true }
+            smooth={ true }
+            duration={ 500 }
+          >
+            <Link to='/#contact'>Contact</Link>
+          </ScrollLink>
+        </NavLinksLi>
 
         <NavLinksLi>
           <SocialMediaDiv>

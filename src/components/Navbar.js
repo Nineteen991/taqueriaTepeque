@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import * as Scroll from 'react-scroll'
 
 import facebookIcon from '../images/facebook.jpg'
 import foursquareIcon from '../images/foursquare.png'
@@ -70,6 +71,7 @@ const SocialMediaImages = styled.img`
 
 export default function Navbar() {
   const { menuLinks } = useContext(Context)
+  const ScrollLink = Scroll.Link
   
   return (
     <Nav>
@@ -84,15 +86,15 @@ export default function Navbar() {
               : <MenuLinksUl>
                   { 
                     Object.entries(ourMenu).map(([sectionName], index) => (
-                      <MenuLinksLi
+                      <ScrollLink
+                        to={ sectionName }
+                        spy={ true }
+                        smooth={ true }
+                        duration={ 500 }
                         key={ index }
-                        onClick={ (e) => {
-                          e.preventDefault()
-                          window.location.replace(`/menu/#${ sectionName }`)
-                        }}
                       >
-                        { sectionName }
-                      </MenuLinksLi>
+                        <MenuLinksLi>{ sectionName }</MenuLinksLi>
+                      </ScrollLink>
                     ))
                   }
                 </MenuLinksUl>

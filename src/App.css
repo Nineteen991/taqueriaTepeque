@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+:root {
+  --pink: #ff3399;
+  --purple: #990099;
+  --title: 'PeachesandCreamRegularW00';
+  --bg-primary: linear-gradient(45deg, var(--pink), var(--purple));
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } 
+  }
+
+  @media only screen and (min-width: 3000px) {
+    html {
+      font-size: 187.5%;
+    }
+  }
+
+a:link, a:visited, a:hover, a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-image: url('./images/homepageImage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 1.6rem;
+  line-height: 1.6;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

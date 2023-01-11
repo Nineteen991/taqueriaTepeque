@@ -13,7 +13,7 @@ export default function App() {
   return (
     <div className='container'>
       <Navbar />
-      
+
       <Routes>
         <Route exact path='/' element={ <HomePage /> } />
         <Route 
@@ -22,7 +22,7 @@ export default function App() {
         />
         <Route path='/*' element={ <ErrorPage /> } />
       </Routes>
-      
+
     </div>
   )
 }

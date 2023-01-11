@@ -78,7 +78,7 @@ export default function HomePage() {
         if (menuLinks !== '/home') {
             setMenuLinks('/home')
         }
-    }, [])
+    }, [menuLinks, setMenuLinks])
 
     return (
         <HomePageDiv>

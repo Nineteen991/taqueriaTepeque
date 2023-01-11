@@ -51,7 +51,7 @@ export default function Menu({ openFood, setOpenFood }) {
 
   useEffect(() => {
     setMenuLinks('/menu')
-  }, [])
+  }, [setMenuLinks])
   
   return (
     <MenuPage>

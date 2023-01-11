@@ -1,7 +1,5 @@
-import menuBg from '../images/menu_bg.jpg'
 import aquasFrescas from '../images/aquas_frescas.jpg'
 import beanAndCheese from '../images/bean_and_cheese.jpg'
-import beerOnTap from '../images/beer_on_tap.jpg'
 import bistekRanchero from '../images/bistek_ranchero.jpg'
 import burrito from '../images/burrito.jpg'
 import californiaBurrito from '../images/california_burrito.jpg'
@@ -9,7 +7,6 @@ import camarones_a_la_diabla from '../images/camarones_a_la_diabla.jpg'
 import camarones_estillo_tepeque from '../images/camarones_estillo_tepeque.jpg'
 import carne_asada from '../images/carne_asada.jpg'
 import cervezas from '../images/cervezas.jpg'
-import cerveza_mexicana from '../images/cerveza_mexicana.jpg'
 import chile_rellenos from '../images/chile_rellenos.jpg'
 import chileRellenoBurrito from '../images/chile_relleno_burrito.jpg'
 import chimichanga from '../images/chimichanga.jpg'
@@ -21,9 +18,7 @@ import enchilada from '../images/enchilada.jpg'
 import fajitasBurrito from '../images/fajitas_burrito.jpg'
 import fajitas_de_camaron from '../images/fajitas_de_camaron.jpg'
 import fajitas_plate from '../images/fajitas_plate.jpg'
-import filete_a_la_diabla from '../images/filete_a_la_diabla.jpg'
 import flautas from '../images/flautas.jpg'
-import green_sauce_enchiladas from '../images/green_sauce_enchiladas.jpg'
 import jarritos from '../images/jarritos.jpg'
 import meatQuesadilla from '../images/meat_quesadilla.jpg'
 import mexican_sodas from '../images/mexican_sodas.jpg'
@@ -397,6 +392,43 @@ export const menuItems = [
         seafoodOrVeggie: false
     },
     {
+        id: 301,
+        img: bistekRanchero,
+        name: 'Bistek Ranchero Plate',
+        price: 13.95,
+        section: 'Lunch and Dinner',
+        glutenFree: true,
+        seafoodOrVeggie: false
+    },
+    {
+        id: 302,
+        img: crispy_tacos_combo,
+        name: 'Crispy Tacos Plate',
+        price: 11.50,
+        section: 'Lunch and Dinner',
+        glutenFree: true,
+        seafoodOrVeggie: false
+    },
+    {
+        id: 303,
+        img: fajitas_plate,
+        name: 'Fajitas Plate',
+        price: 13.95,
+        section: 'Lunch and Dinner',
+        glutenFree: false,
+        seafoodOrVeggie: false
+    },
+    {
+        id: 400,
+        img: camarones_a_la_diabla,
+        name: 'Camarones A La Diabla',
+        price: 12.95,
+        section: 'Mariscos / Seafood',
+        glutenFree: true,
+        seafoodOrVeggie: true
+        
+    },
+    {
         id: 800,
         img: cervezas,
         name: 'Cervezas',
@@ -441,72 +473,6 @@ export const menuItems = [
         glutenFree: true,
         seafoodOrVeggie: false
     },
-    // {
-    //     id: 0,
-    //     img: green_sauce_enchiladas
-    // },
-    // {
-    //     id: 0,
-    //     img: filete_a_la_diabla
-    // },
-    // {
-    //     id: 0,
-    //     img: fajitas_plate
-    // },
-    // {
-    //     id: 0,
-    //     img: crispy_tacos_combo
-    // },
-    // {
-    //     id: 0,
-    //     img: bistekRanchero
-    // },
-    // {
-    //     id: 0,
-    //     img: camarones_a_la_diabla
-    // },
-    // {
-    //     id: 0,
-    //     img: camarones_estillo_tepeque
-    // },
-    // {
-    //     id: 1,
-    //     img: carne_asada
-    // },
-    // {
-    //     id: 1,
-    //     img: cerveza_mexicana
-    // },
-    // {
-    //     id: 3,
-    //     img: cocktel_de_camaron
-    // },
-    // {
-    //     id: 4,
-    //     img: combo_plate
-    // },
-    // {
-    //     id: 5,
-    //     img: fajitas_de_camaron
-    // },
-    
-    // {
-    //     id: 7,
-    //     img: michelada_doble
-    // },
-    
-    // {
-    //     id: 9,
-    //     img: pescado_frito
-    // },
-    // {
-    //     id: 10,
-    //     img: pozole
-    // },
-    // {
-    //     id: 11,
-    //     img: taco_salad
-    // }
 ]
 
 export const imgArray = [

@@ -45,14 +45,8 @@ export function formatPrice(price) {
 
 export const ourMenu = menuItems.reduce((prevItem, item) => {
     if (!prevItem[item.section]) {
-        // take the 1st menu section & add it as a key w/ an empty [] value
         prevItem[item.section] = []
     }
-    /*
-      we're taking an empty obj & adding keys which are the section names
-      & the values are arrays & the arrays are going to push on the items
-      so that each section will have its own list of unique foods
-    */
     prevItem[item.section].push(item)
 
     return prevItem

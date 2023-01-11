@@ -23,7 +23,7 @@ const TitleDiv = styled.div`
 const TitleH1 = styled.h1`
     color: white;
     font-family: var(--title);
-    font-size: 15rem;
+    font-size: 10rem;
     text-shadow: 5px 5px black;
     letter-spacing: 1rem;
     text-align: center;

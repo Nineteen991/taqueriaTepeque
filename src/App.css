@@ -9,7 +9,7 @@
 :root {
   --pink: #ff3399;
   --purple: #990099;
-  --title: 'PeachesandCreamRegularW00';
+  --title: 'La Belle Aurore', cursive;
   --bg-primary: linear-gradient(45deg, var(--pink), var(--purple));
 }
 
